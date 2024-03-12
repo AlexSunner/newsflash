@@ -30,8 +30,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://newsflash-42b6ce7a76e1.herokuapp.com/',
-    'https://8000-alexsunner-newsflash-hw2xlfbkpk9.ws-eu108.gitpod.io',
+    'https://*.herokuapp.com/',
+    'https://*.gitpod.io',
 ]
 
 ALLOWED_HOSTS = ['8000-alexsunner-newsflash-hw2xlfbkpk9.ws-eu108.gitpod.io', '.herokuapp.com']
