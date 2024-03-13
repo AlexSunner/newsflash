@@ -1,5 +1,5 @@
-{% url 'home' as home_url %}
 {% load static %}
+{% url 'home' as home_url %}
 
 <!DOCTYPE html>
 <html class="h-100" lang="en">
@@ -15,6 +15,8 @@
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
     <!-- Bootstrap CSS -->
@@ -33,14 +35,6 @@
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
-                            href="#">Home</a>
-                    </li>
-
-                </ul>
                 <span class="navbar-text text-muted">
                     Your daily dose of Newsflash
                 </span>
