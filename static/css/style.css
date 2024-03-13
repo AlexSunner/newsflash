@@ -1,80 +1,181 @@
-/* Reset default browser styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Apply a background color to the body */
+/* Body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-/* Style the header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Style the navigation */
-nav {
-    background-color: #444;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F9FAFC;
+    color: #4A4A4F;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+/* Brand */
+.brand {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4A4A4F;
+    text-decoration: underline;
 }
 
-nav ul li a {
+/* Accent color */
+.red-o {
+    color: #E84610;
+}
+
+/* Thin font weight */
+.thin {
+    font-weight: 300;
+}
+
+/* Light background */
+.light-bg {
+    background-color: #fff;
+}
+
+/* Dark background */
+.dark-bg {
+    background-color: #445261;
     color: #fff;
+}
+
+/* Main background */
+.main-bg {
+    background-color: #F9FAFC;
+}
+
+/* Cards */
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Image container */
+.image-container {
+    position: relative;
+}
+
+/* Image flash */
+.image-flash {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #E84610;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Responsive images */
+.scale {
+    width: 100%;
+    height: auto;
+}
+
+/* Author */
+.author {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Masthead */
+.masthead {
+    overflow: hidden;
+    position: relative;
+    height: 33vh;
+    width: 100%;
+}
+
+/* Masthead text */
+.masthead-text {
+    background-color: #445261;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Masthead image */
+.masthead-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.masthead-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -200px;
+    height: 100%;
+    width: 300%;
+    background: #445261;
+    transform: skew(15deg);
+    z-index: 100;
+}
+
+/* Post link */
+.post-link {
+    color: #445261;
     text-decoration: none;
 }
 
-/* Style the main content */
-main {
-    padding: 20px;
+.post-link:hover,
+.page-link {
+    color: #E84610;
 }
 
-/* Style the articles */
-article {
-    background-color: #fff;
+/* Post title */
+.post-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Post subtitle */
+.post-subtitle {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-article h2 {
-    color: #333;
-}
-
-article p {
-    color: #555;
-}
-
-article time {
-    color: #777;
-}
-
-/* Style the footer */
-footer {
-    background-color: #333;
+.btn-primary {
+    background-color: #E84610;
     color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #ff6b3d;
+}
+
+.btn-secondary {
+    background-color: #445261;
+    color: #fff;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #627482;
+}
+
+/* Links */
+.link {
+    color: #23BBBB;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover,
+.link:focus {
+    color: #188181;
 }
