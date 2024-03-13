@@ -34,7 +34,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://*.gitpod.io',
 ]
 
-ALLOWED_HOSTS = ['8000-alexsunner-newsflash-hw2xlfbkpk9.ws-eu108.gitpod.io', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-alexsunner-newsflash-hw2xlfbkpk9.ws-eu110.gitpod.io', '.herokuapp.com']
 
 
 # Application definition
