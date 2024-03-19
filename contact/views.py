@@ -1,6 +1,15 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Contact
 
 # Create your views here.
 def contact_me(request):
-    return HttpResponse("collaboration form")
+    """
+    Renders the Contact page
+    """
+    contact = Contact.objects.all().order_by('-updated_on').first()
+
+    return render(
+        request,
+        "contact/contact.html",
+        {"contact": contact},
+    )
