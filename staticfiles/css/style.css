@@ -1,193 +1,161 @@
-/* Body */
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: #F9FAFC;
-    color: #4A4A4F;
-    margin: 0;
-    padding: 0;
 }
 
-/* Brand */
 .brand {
-    font-size: 2rem;
+    font-family: Lato, sans-serif;
+    font-size: 1.4rem;
     font-weight: 700;
     color: #4A4A4F;
-    text-decoration: underline;
 }
 
-/* Accent color */
 .red-o {
     color: #E84610;
 }
 
-/* Thin font weight */
 .thin {
     font-weight: 300;
 }
 
-/* Light background */
 .light-bg {
     background-color: #fff;
 }
 
-/* Dark background */
 .dark-bg {
     background-color: #445261;
-    color: #fff;
 }
 
-/* Main background */
 .main-bg {
     background-color: #F9FAFC;
 }
 
-/* Cards */
 .card {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
+    border: none;
+    background-color: transparent;
 }
 
-/* Image container */
 .image-container {
     position: relative;
 }
 
-/* Image flash */
 .image-flash {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: #E84610;
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #fff;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: #188181;
 }
 
-/* Responsive images */
 .scale {
     width: 100%;
     height: auto;
 }
 
-/* Author */
 .author {
+    color: white;
+    margin: 4px;
     text-transform: uppercase;
-    font-weight: 700;
 }
 
-/* Masthead */
 .masthead {
+    margin-top: 10px;
     overflow: hidden;
     position: relative;
+    display: inline-block;
     height: 33vh;
     width: 100%;
 }
 
-/* Masthead text */
 .masthead-text {
     background-color: #445261;
-    color: #fff;
-    padding: 50px;
-    text-align: center;
+    color: white;
+    position: relative;
 }
 
-/* Masthead image */
 .masthead-image {
     position: relative;
     overflow: hidden;
 }
 
 .masthead-image:after {
+    content: "";
     position: absolute;
     top: 0;
-    right: -200px;
+    right: 90%;
     height: 100%;
-    width: 300%;
+    width: 150%;
     background: #445261;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
     transform: skew(15deg);
     z-index: 100;
 }
 
-/* Post link */
 .post-link {
-    color: #445261;
     text-decoration: none;
+    color: #445261;
 }
 
-.post-link:hover {
+.post-link:hover,
+.page-link {
     color: #E84610;
 }
-.page-link {
-    color: gray !important;
-    text-decoration: none !important;
-    font-weight: 700 !important;
-    padding: 10px 20px !important;
-    border: 2px solid gray!important;
-    border-radius: 5px !important;
-    transition: background-color 0.3s ease, color 0.3s ease !important;
-}
 
-.page-link:hover,
-.page-link:focus {
-    color: #fff;
-}
-
-/* Post title */
 .post-title {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
+    margin-top: 10%;
+    margin-left: 5%;
 }
 
-/* Post subtitle */
 .post-subtitle {
-    color: #ccc;
-    font-size: 1rem;
+    margin-left: 5%;
+    color: lightgray;
 }
 
-/* Buttons */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary {
-    background-color: #E84610;
+.btn-signup,
+.btn-edit {
+    background-color: #188181;
     color: #fff;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: #ff6b3d;
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #23BBBB;
 }
 
-.btn-secondary {
-    background-color: #445261;
-    color: #fff;
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-    background-color: #627482;
-}
-
-/* Links */
 .link {
     color: #23BBBB;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 .link:hover,
-.link:focus {
-    color: #188181;
+.link:active {
+    color: #445261;
+    text-decoration: underline;
+}
+
+.btn-like {
+    color: #E84610;
+    border: none;
+    background: transparent;
+}
+
+.btn-delete {
+    color: #fff;
+    background: #E84610;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #E84610;
+    background: transparent;
+    border: none;
+}
+
+.faded {
+    color: rgb(172, 175, 175);
+}
+
+.approval {
+    color: rgb(222, 146, 168);
 }
