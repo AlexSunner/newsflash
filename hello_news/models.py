@@ -11,6 +11,7 @@ class Post(models.Model):
         User, on_delete=models.CASCADE, related_name="news_post"
     )
     content = models.TextField()
+    category = models.ForeignKey('Category', on_delete=models.CASCADE, null=True)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
@@ -37,3 +38,11 @@ class Comment(models.Model):
     
     def __str__(self):
         return f"{self.body} | written by {self.author}"
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=100)
+    slug = models.SlugField(unique=True)
+
+    def __str__(self):
+        return self.name
