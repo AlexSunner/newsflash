@@ -1,5 +1,9 @@
 body {
-    background-color: #F9FAFC;
+    background-image: url('/static/images/wallpape.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff
 }
 
 .brand {
@@ -25,13 +29,17 @@ body {
     background-color: #445261;
 }
 
-.main-bg {
-    background-color: #F9FAFC;
-}
 
 .card {
     border: none;
     background-color: transparent;
+}
+.card-text {
+    color: #ffffff !important
+}
+
+.text-secondary {
+    color: #ffffff !important
 }
 
 .image-container {
@@ -93,7 +101,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #ffffff;
 }
 
 .post-link:hover,
@@ -134,22 +142,9 @@ body {
     text-decoration: underline;
 }
 
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
-
 .btn-delete {
     color: #fff;
     background: #E84610;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
 }
 
 .faded {
@@ -158,4 +153,12 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+a > i {
+    color: #ffffff;
+}
+
+.modal-text {
+    color: black;
 }

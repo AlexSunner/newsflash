@@ -16,7 +16,7 @@ def contact_me(request):
         collaborate_form = CollaborateForm(data=request.POST)
         if collaborate_form.is_valid():
             collaborate_form.save()
-            messages.success(request, "Collaboration request received!")
+            messages.success(request, "Collaboration request has been sent successfully!")
             return redirect('contact')  # Redirect after successful form submission
     else:
         collaborate_form = CollaborateForm()
