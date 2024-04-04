@@ -1,5 +1,8 @@
 body {
-    background-color: #F9FAFC;
+    background-image: url('/static/images/pp4wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff
 }
 
 .brand {
@@ -25,13 +28,13 @@ body {
     background-color: #445261;
 }
 
-.main-bg {
-    background-color: #F9FAFC;
-}
 
 .card {
     border: none;
     background-color: transparent;
+}
+.card-text {
+    color: #ffffff !important
 }
 
 .image-container {
@@ -93,7 +96,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #ffffff;
 }
 
 .post-link:hover,

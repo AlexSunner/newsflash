@@ -5,10 +5,13 @@ from .forms import CollaborateForm
 
 def contact_me(request):
     """
-    Renders the Contact page
+    Renders the Contact page and handles collaboration form submissions.
     """
-    contact = Contact.objects.all().order_by('-updated_on').first()
-    
+    try:
+        contact = Contact.objects.latest('updated_on')
+    except Contact.DoesNotExist:
+        contact = None
+
     if request.method == "POST":
         collaborate_form = CollaborateForm(data=request.POST)
         if collaborate_form.is_valid():
