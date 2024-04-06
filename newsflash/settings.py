@@ -36,7 +36,10 @@ CSRF_TRUSTED_ORIGINS = [
     'https://*.gitpod.io',
 ]
 
-ALLOWED_HOSTS = ['8000-alexsunner-newsflash-llu4ayoc2k3.ws-eu110.gitpod.io', '.herokuapp.com']
+ALLOWED_HOSTS = [
+    '8000-alexsunner-newsflash-llu4ayoc2k3.ws-eu110.gitpod.io',
+    '.herokuapp.com'
+]
 
 
 # Application definition
@@ -104,12 +107,12 @@ WSGI_APPLICATION = 'newsflash.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
-#}
+# }
 
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
