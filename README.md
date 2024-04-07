@@ -1,110 +1,117 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Newsflash
 
-Welcome Alexander Sunnerhage,
+Newsflash is a Django-powered web application designed to provide users with access to a variety of posts on different topics. Users can browse through the homepage to view posts, and if they have registered accounts, they can log in to leave comments on the posts. Additionally, users have the option to sign up for a new account to gain access to additional features and personalize their experience on the platform.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The live link can be found here - <https://newsflash-42b6ce7a76e1.herokuapp.com/>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Planning
 
-## Gitpod Reminders
+### Before creating this project I visualized how I wanted the final product to be
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- I wanted the project to be fully responsive for different devices, ensuring an optimal user experience whether viewed on a desktop, tablet, or mobile device.
+- Additionally, I aimed to incorporate user registration functionality, allowing viewers to register accounts so they can comment on posts and engage with the content.
+- Furthermore, I envisioned a contact page with a form through which viewers can send collaboration requests, adding an interactive element to the platform.
+- Moreover, I envisioned the project as a dynamic news article website featuring posts covering a diverse range of categories, including Space news, Historical events, and Software development updates, to cater to a wide audience with varied interests.
 
-`python3 -m http.server`
+![Responsive Mockup](https://github.com/AlexSunner/newsflash/blob/main/static/images/mockup.jpg?raw=true)
 
-A blue button should appear to click: _Make Public_,
+## Features
 
-Another blue button should appear to click: _Open Browser_.
+Here is a presentation of the different features added into Newsflash.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- __Collaboration Request Form__
 
-A blue button should appear to click: _Make Public_,
+    - A contact page with a form is available, allowing viewers to send collaboration requests, fostering interaction and engagement with the platform.
 
-Another blue button should appear to click: _Open Browser_.
+![Collaboration Form](https://github.com/AlexSunner/newsflash/blob/main/static/images/collaborate.jpg?raw=true)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- __Homepage__
 
-To log into the Heroku toolbelt CLI:
+    - The homepage showcases featured posts from various categories, including Space news, Historical events, and Software development updates. This allows users to easily discover and explore the latest and most relevant content right from the homepage.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Homepage](https://github.com/AlexSunner/newsflash/blob/main/static/images/homepage-big.jpg?raw=true)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+    - Also, this is how it looks on a mobile device.
 
-------
+![Homepage on iPhone](https://github.com/AlexSunner/newsflash/blob/main/static/images/homepage-small.jpg?raw=true)
 
-## Release History
+- __Post Viewing and Comments with Full CRUD Functionality__
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+    - When users click on a post title from the homepage page, they are directed to a dedicated page displaying the full content of the selected post. This page includes details such as the post title, author, publication date, and the complete article content. Users can also view and contribute comments to engage in discussions about the post's topic.
 
-**September 20 2023:** Update Python version to 3.9.17.
+![Post View](https://github.com/AlexSunner/newsflash/blob/main/static/images/post-big.jpg?raw=true)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    - Users who have commented on posts have the ability to edit or delete their comments. When viewing their own comments, users will see options to edit or delete each comment. Clicking on the "Edit" option allows users to modify the content of their comments, while selecting the "Delete" option prompts a confirmation message asking if they are sure they want to delete the comment. This confirmation step helps prevent accidental deletion of comments. After confirming the deletion, the comment is permanently removed from the post, and a success message confirms the action. Similarly, after editing a comment, the updated content is saved, and a success message is displayed to indicate that the modification was successful.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Comments Displayed](https://github.com/AlexSunner/newsflash/blob/main/static/images/editdelete.jpg?raw=true)
+![Comment confirmation](https://github.com/AlexSunner/newsflash/blob/main/static/images/deletemodal.jpg?raw=true)
+![Comment edited or deleted successfully](https://github.com/AlexSunner/newsflash/blob/main/static/images/deletesuccess.jpg?raw=true)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- __User Registration__
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+    - Viewers have the ability to register accounts, enabling them to interact with the platform by commenting on posts and engaging with the content.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![Signup Page](https://github.com/AlexSunner/newsflash/blob/main/static/images/signup.jpg?raw=true)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- __Login Page__
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+    - The login page allows registered users to securely access their accounts by entering their username and password. Users can navigate to the login page from any part of the website by clicking on the "Login" link in the navigation bar. Once logged in, users gain access to additional features such as the ability to comment on posts.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![Login Page](https://github.com/AlexSunner/newsflash/blob/main/static/images/login.jpg?raw=true)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- __Logout Page__
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    - The logout page allows authenticated users to securely log out of their accounts. When users navigate to the logout page or click the "Logout" link in the navigation bar, they are prompted with a confirmation message asking if they are sure they want to sign out. This additional step ensures that users don't accidentally log out of their accounts. Upon confirming the logout action, users are redirected to the homepage, and their active session is terminated.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Logout Page](https://github.com/AlexSunner/newsflash/blob/main/static/images/logout.jpg?raw=true)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- __Category Custom Model__
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    - The Category model organizes posts into different thematic categories, such as Space News, Historical Events, and Software Development. Each category consists of a name and a unique slug, allowing for easy navigation and filtering of posts based on specific topics. The Category model ensures efficient organization and accessibility of content, enhancing the user experience by providing a structured and intuitive browsing experience.
+    - 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Category](https://github.com/AlexSunner/newsflash/blob/main/static/images/category.jpg?raw=true)
 
-------
+- __Category Management in Django Admin__
 
-## FAQ about the uptime script
+    - The Django admin panel provides an intuitive interface for managing categories within the Newsflash project. Administrators can easily add, edit, and delete categories directly through the admin interface, streamlining the process of organizing and updating post categories. Upon accessing the admin panel, administrators can navigate to the Category section, where they have full control over the category data. They can add new categories by providing a name and a unique slug, edit existing categories to update their details, and delete categories that are no longer needed. This functionality empowers administrators to maintain a well-organized and up-to-date category structure, ensuring that posts are appropriately categorized and easily accessible to users.
 
-**Why have you added this script?**
+![Category section for Admins](https://github.com/AlexSunner/newsflash/blob/main/static/images/admincategory.jpg?raw=true)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- __Administrative Control via Django Admin Panel__
 
-**How will this affect me?**
+    - The Newsflash project offers administrators extensive control and management capabilities through the Django admin panel. Administrators have the authority to add, edit, and delete categories, posts, users, and contact page details effortlessly using the intuitive admin interface. Additionally, they are able to read collaboration requests. Within the admin panel, administrators can navigate to specific sections dedicated to each entity, such as Categories, Posts, Users, Collaboration Requests, and Contact Page. From there, they can perform various actions such as adding new categories or posts, editing existing entries to update their details, and deleting outdated or redundant content. This comprehensive administrative functionality empowers administrators to maintain the project's integrity, manage user interactions, and oversee content creation and collaboration effectively from a centralized and user-friendly interface.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![Admin Panel](https://github.com/AlexSunner/newsflash/blob/main/static/images/adminpanel.jpg?raw=true)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- __Responsive Navigation Bar__
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+    - The Newsflash project incorporates a responsive navigation bar that seamlessly adapts to different screen sizes, ensuring optimal user experience across devices. On desktop and tablet devices, the navigation bar appears as a traditional horizontal menu, providing easy access to various sections of the website. However, on mobile devices, the navigation bar transforms into a convenient slide-down feature, conserving screen space while offering intuitive navigation options. This responsive design approach enhances usability and accessibility, allowing users to effortlessly explore the website's content regardless of the device they're using.
 
-**So….?**
+![Navigation Bar](https://github.com/AlexSunner/newsflash/blob/main/static/images/navbar-big.jpg?raw=true)
+![Navigation Bar Mobile Device](https://github.com/AlexSunner/newsflash/blob/main/static/images/navbar-small.jpg?raw=true)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- __Social Media Integration in Footer__
 
-**Can I opt out?**
+    - The Newsflash project incorporates social media integration within the footer section, providing convenient access to various social media platforms such as Twitter, Youtube, Instagram, and Facebook. The footer includes clickable icons that direct users to the respective social media  pages when clicked. Additionally, to enhance user experience and ensure seamless navigation, each link opens in a new window, allowing users to explore social media content without leaving the website. This integration fosters engagement and connectivity, enabling users to stay updated with the latest news, announcements, and content across different social media platforms.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![Footer](https://github.com/AlexSunner/newsflash/blob/main/static/images/footer.jpg?raw=true)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Testing
 
-**Anything more?**
+### Automated Testing
+- Forms, models, and views passed all automated tests with `python3 manage.py test` command.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+![Forms Test]()
 
----
+## HTML Validator
+- Minor errors encountered in HTML validator for the signup page, potentionally caused by Django.
 
-Happy coding!
+## CSS Validator
+- ALL CSS rules passed validation without any errors.
+
+## JavaScript Validator (JSHint)
+- No errors or warnings reported in the JSHint validator, indicating clean JavaScript code.
+
+## Python Validator (CI Python Linter)
+- `admin.py`, `forms.py`, `models.py`, `urls.py`, and `views.py` in the `hello_news` app passed the Python linter without any errors or warnings.
