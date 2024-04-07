@@ -102,7 +102,22 @@ Here is a presentation of the different features added into Newsflash.
 ### Automated Testing
 - Forms, models, and views passed all automated tests with `python3 manage.py test` command.
 
-![Forms Test]()
+![Hello_news Forms Test](https://github.com/AlexSunner/newsflash/blob/main/static/images/hello_news_test_forms.jpg?raw=true)
+
+![Contact Forms Test](https://github.com/AlexSunner/newsflash/blob/main/static/images/contact_test_forms.jpg?raw=true)
+
+![Hello_news Views Test](https://github.com/AlexSunner/newsflash/blob/main/static/images/hello_news_test_views1.jpg?raw=true)
+![Hello_news Views Test 2](https://github.com/AlexSunner/newsflash/blob/main/static/images/hello_news_test_views2.jpg?raw=true)
+
+![Contact Views Test](https://github.com/AlexSunner/newsflash/blob/main/static/images/contact_test_views.jpg?raw=true)
+
+![Hello_news Models Test](https://github.com/AlexSunner/newsflash/blob/main/static/images/hello_news_test_models.jpg?raw=true)
+
+![Contact Models Test](https://github.com/AlexSunner/newsflash/blob/main/static/images/contact_test_models.jpg?raw=true)
+
+![Run Test Command]()
+
+![Views Test 3]
 
 ## HTML Validator
 - Minor errors encountered in HTML validator for the signup page, potentionally caused by Django.
