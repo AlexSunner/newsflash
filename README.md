@@ -305,12 +305,13 @@ Cloning your repository will allow you to download a local version of the reposi
 - [Google Translate](https://translate.google.se/?hl=sv) - Used as a translator
 - [Google Search Engine](https://www.google.com/) - Searching for answers
 - [Lucidchart](https://lucidchart.com/) - Creating a basic flowchart
-- [GitPod](https://gitpod.io/) - The IDE used to create the project.
+- [GitPod](https://gitpod.io/) - The IDE used to create the project
+- [PlaceIt](https://placeit.com/) - Used to create the mockup
 
 ## Credits
 
 ### Code|Star Walkthrough Project
-- Much of the HTML, CSS and Django code in this project is inspired by and adapted from the Code|Star walkthrough project, which provided valuable guidance and insights into web development best practices. Features such as the Navigation bar, the footer, the contact page, the post details,the comment section, signup and registation page was very much from the Code|Star project.
+- Much of the HTML, CSS and Django code in this project is inspired by and adapted from the Code|Star walkthrough project, which provided valuable guidance and insights into web development best practices. Features such as the Navigation bar, the homepage, the footer, the contact page, the post details,the comment section, signup and registation page was very much from the Code|Star project.
 
 ### Media
 - The background image was taken from [MrWallPaper](https://mrwallpaper.com/)
